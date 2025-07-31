@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Smiling Face</title>
+</head>
+<body style="text-align:center; background-color:#fefbd8; font-family:sans-serif;">
+  <h2>Smiling Face Using Canvas</h2>
+  <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000;"></canvas>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(150, 150, 100, 0, Math.PI * 2, true);
+    ctx.fillStyle = "#FFD966"; 
+    ctx.fill();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(110, 120, 10, 0, Math.PI * 2, true); 
+    ctx.arc(190, 120, 10, 0, Math.PI * 2, true); 
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(150, 160, 50, 0, Math.PI, false); 
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "black";
+    ctx.stroke();
+  </script>
+</body>
+</html>
